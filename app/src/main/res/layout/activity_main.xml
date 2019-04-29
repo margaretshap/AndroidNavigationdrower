@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/progressbar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageview"
+        android:layout_below="@+id/progressbar"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/wildlife2"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:text="login"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_below="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no of attempts remaining"
+        tools:ignore="UnknownId" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dont_have_accont"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create_new_account"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>
